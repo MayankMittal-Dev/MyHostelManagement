@@ -26,28 +26,35 @@ A Java Swing and MySQL based Hostel Management System developed using Apache Net
 - MySQL Server
 - MySQL JDBC Connector
 
+
 ## Setup Instructions
+
+### Requirements
+- Java JDK
+- Apache NetBeans IDE
+- MySQL Server
+- MySQL Workbench
+- MySQL Connector/J
+
+### Installation Steps
 
 1. Download or clone this repository.
 2. Open the project in Apache NetBeans.
-3. Create the required database in MySQL.
-4. Import the database SQL file, when provided.
-5. Configure your own MySQL connection details.
-6. Build and run the project from NetBeans.
+3. Open MySQL Workbench and connect to your local MySQL Server.
+4. Open the `hostel.sql` file from the project folder.
+5. Execute the complete SQL script to create the `hostel` database, tables, and sample records.
+6. Open `Project.ConnectionProvider.java` in NetBeans.
+7. Update the MySQL username and password according to your local setup.
+8. Make sure MySQL Connector/J is added to the project libraries.
+9. Build and run the project from NetBeans.
 
-## Note
+### Database Configuration
 
-This project was developed for learning and academic purposes. Database setup and connection configuration may be required before running it.
+Update the database connection details in `ConnectionProvider.java`:
 
-## Database Setup
+- Database: `hostel`
+- Username: Your MySQL username
+- Password: Your MySQL password
 
-1. Install MySQL Server and MySQL Workbench.
-2. Open MySQL Workbench and connect to your local MySQL server.
-3. Open the `hostel.sql` file from this repository.
-4. Execute the SQL script to create the database tables and insert the sample data.
-5. Configure your local MySQL username and password in `Project.ConnectionProvider`.
-6. Open the `Project.ConnectionProvider` class in NetBeans.
-7. Open the project in NetBeans, build it, and run the application.
-
-**Note:** The database connection settings must match your local MySQL configuration. Use your own credentials; do not share your database password publicly.
+**Note:** Do not upload your actual database password to GitHub.
 
