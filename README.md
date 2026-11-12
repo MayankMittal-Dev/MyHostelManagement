@@ -45,8 +45,8 @@ This project was developed for learning and academic purposes. Database setup an
 2. Open MySQL Workbench and connect to your local MySQL server.
 3. Open the `hostel.sql` file from this repository.
 4. Execute the SQL script to create the database tables and insert the sample data.
-5. Open the `Project.ConnectionProvider` class in NetBeans.
-6. Configure the database connection URL, username, and password according to your local MySQL setup.
+5. Configure your local MySQL username and password in `Project.ConnectionProvider`.
+6. Open the `Project.ConnectionProvider` class in NetBeans.
 7. Open the project in NetBeans, build it, and run the application.
 
 **Note:** The database connection settings must match your local MySQL configuration. Use your own credentials; do not share your database password publicly.
